@@ -9,3 +9,4 @@
 - think about most effective way to host data for both CyVerse and non-CyVerse users
     - on CyVerse you just attach the proper folder
     - how do you share with non-CyVerse users? Particularly sharing directories of data, etc.
+    - maybe like a `SysInfo()` call where you check if you're on VICE, and if so, you look for data in the right place, otherwise you download via a public link?
