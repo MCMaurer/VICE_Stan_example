@@ -10,6 +10,7 @@
         - tried this and it, uh, did not seem to work. need to read more on how `renv` cache actually works
         - might be something to actually set in a .Renviron file
         - another problem here is that attaching the cache takes *forever*. I honestly think it's faster to just `renv::restore()` from the lockfile than to attach, though this may change with future fuse mount
+    - might also make `renv` lockfile into something that gets bound to container launch. Like, `renv::restore()` gets run as part of container launch? But perhaps this wouldn't work because of the .Rproj part
 - think about most effective way to host data for both CyVerse and non-CyVerse users
     - on CyVerse you just attach the proper folder
     - how do you share with non-CyVerse users? Particularly sharing directories of data, etc.
